@@ -50,3 +50,21 @@ git rebase main
   git push origin feature --force
  # --force bisa menghapus riwayat commit di remote, gunakan dengan hati-hati, terutama jika bekerja dalam tim.
 ```
+
+# Stash Demo
+Stash digunakan ketika terjadi konflik saat git pull
+## 1. Menyimpan perubahan dengan git stash
+```bash
+git stash
+```
+## 2. Mengambil perubahan dari git
+```bash
+git pull origin main
+```
+## 3. Mengembalikan Hasil perubahan
+```bash
+git stash pop
+
+# Jika terjadi konflik, harus menangani dengan manual
+# bisa menggunakan nano nama_file atau text editor
+```
