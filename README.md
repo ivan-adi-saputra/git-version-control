@@ -68,3 +68,16 @@ git stash pop
 # Jika terjadi konflik, harus menangani dengan manual
 # bisa menggunakan nano nama_file atau text editor
 ```
+
+# Checkout Demo
+## Guide 
+```bash
+# Berpindah Antara Branch
+git checkout nama_branch
+
+# Membuat Branch Baru dan Berpindah ke Branch Tersebut
+git checkout -b nama_branch
+
+# Mengembalikan Perubahan pada File ( ketika belum di commit )
+git checkout -- nama_file
+```
