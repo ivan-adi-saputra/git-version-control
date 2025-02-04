@@ -81,3 +81,11 @@ git checkout -b nama_branch
 # Mengembalikan Perubahan pada File ( ketika belum di commit )
 git checkout -- nama_file
 ```
+
+# Tag untuk Menandai Versi Produksi
+Untuk menandai versi yang siap untuk produksi, gunakan tag. Tag memudahkan tim untuk mengidentifikasi releases atau versi stabil dari aplikasi yang dapat di-deploy.
+```bash 
+# Menambahkan tag untuk versi 1.0.0
+git tag -a v1.0.0 -m "Release versi 1.0.0"
+git push origin v1.0.0  # Mengirim tag ke remote
+```
